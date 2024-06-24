@@ -38,11 +38,13 @@ body {
 .header .logo {
     height: 50px;
     margin-right: 15px;
+    transition: height 0.3s;
 }
 
 .header h1 {
     margin: 0;
     font-size: 1.5rem;
+    transition: font-size 0.3s;
 }
 
 .header .navbar {
@@ -220,13 +222,19 @@ section {
     .project-item {
         flex: 1 1 calc(50% - 1rem);
     }
+
+    .header .logo {
+        height: 70px;
+    }
+
+    .header h1 {
+        font-size: 2rem;
+    }
+
+    main {
+        padding: 10rem 1rem 1rem; /* Ajuste o padding para levar em conta o cabeçalho fixo */
+    }
 }
-
-
-main {
-    padding: 10rem 1rem 1rem; /* Adiciona mais espaço entre o cabeçalho fixo e o conteúdo */
-}
-
 
 @media (max-width: 480px) {
     .project-item {
@@ -237,17 +245,15 @@ main {
         padding: 0.5rem 1rem;
     }
 
-    main {
-        padding: 10rem 1rem 1rem;
-    }
-
     .header .logo {
-        height: 40px;
+        height: 60px;
     }
 
     .header h1 {
-        font-size: 1.2rem;
+        font-size: 1.8rem;
+    }
+
+    main {
+        padding: 10rem 1rem 1rem; /* Ajuste o padding para levar em conta o cabeçalho fixo */
     }
 }
-
-   
