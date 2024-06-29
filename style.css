@@ -311,3 +311,26 @@ section {
         font-size: 2rem;
     }
 }
+
+
+/* Estilo do botão "Voltar ao topo" */
+#backToTopBtn {
+    display: none; /* Oculto por padrão */
+    position: fixed;
+    bottom: 40px;
+    right: 40px;
+    z-index: 99;
+    border: none;
+    outline: none;
+    background-color: #00509e;
+    color: white;
+    cursor: pointer;
+    padding: 15px;
+    border-radius: 10px;
+    font-size: 18px;
+    transition: background-color 0.3s;
+}
+
+#backToTopBtn:hover {
+    background-color: #003366;
+}
