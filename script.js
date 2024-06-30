@@ -19,3 +19,34 @@ backToTopBtn.onclick = function() {
     document.body.scrollTop = 0; // Para Safari
     document.documentElement.scrollTop = 0; // Para Chrome, Firefox, IE e Opera
 };
+
+
+/*                                */
+
+
+const hamburgerBtn = document.getElementById('hamburgerBtn');
+const mobileNav = document.getElementById('mobileNav');
+const closeBtn = document.getElementById('closeBtn');
+
+hamburgerBtn.addEventListener('click', function() {
+    mobileNav.classList.toggle('active');
+});
+
+closeBtn.addEventListener('click', function() {
+    mobileNav.classList.remove('active');
+});
+
+
+// Fechar o menu hamburguer ao clicar em um link dentro dele
+const mobileNavLinks = document.querySelectorAll('.mobile-nav ul li a');
+mobileNavLinks.forEach(link => {
+    link.addEventListener('click', function () {
+        const mobileNav = document.getElementById('mobileNav');
+        mobileNav.classList.remove('active');
+    });
+});
+
+
+
+
+
