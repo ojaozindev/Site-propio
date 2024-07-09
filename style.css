@@ -115,6 +115,11 @@ main {
     position: relative;
     overflow: hidden;
 }
+.project-item h3 {
+    font-family: 'Orbitron', sans-serif;
+    font-size: 1.5rem;
+    font-weight: 700;
+}
 
 .project-item:hover {
     transform: translateY(-10px);
