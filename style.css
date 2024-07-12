@@ -16,6 +16,7 @@ body {
     min-height: 100vh;
 }
 
+
 /* Estilos do cabeçalho */
 .header {
     display: flex;
@@ -200,6 +201,35 @@ section {
     bottom: -10px;
     left: 0;
 }
+
+        .hidden {
+            display: none;
+        }
+
+        /* Estilo para o botão "Ver Mais" */
+        .ver-mais-container {
+            position: relative;
+            text-align: center;
+            margin-top: 20px;
+            margin-bottom: 20px;
+        }
+
+        .ver-mais-btn {
+            font-size: 18px;
+            font-weight: bold;
+            background-color: #007bff;
+            color: #fff;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            padding: 10px 20px;
+            transition: background-color 0.3s;
+        }
+
+        .ver-mais-btn:hover {
+            background-color: #0056b3;
+        }
+    
 
 /* Estilos do rodapé */
 .footer {
