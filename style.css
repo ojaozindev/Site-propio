@@ -182,6 +182,7 @@ section {
     margin-bottom: 2rem;
 }
 
+
 /* Adiciona margem entre o título "Projetos" e os itens do projeto */
 #projects h2 {
     margin-bottom: 2rem;
@@ -264,6 +265,7 @@ section {
 .header, .footer, .navbar ul li a {
     animation: fadeIn 1s ease-in-out;
 }
+
 
 
 /* Estilos responsivos */

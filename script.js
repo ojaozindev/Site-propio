@@ -48,5 +48,13 @@ mobileNavLinks.forEach(link => {
 
 
 
+function mostrarMais() {
+    const hiddenProjects = document.querySelectorAll('.project-item.hidden');
 
+    hiddenProjects.forEach(item => {
+        item.classList.remove('hidden');
+    });
 
+    // Oculta o botão "Ver Mais" após mostrar todos os projetos
+    document.querySelector('.ver-mais-container').classList.add('hidden');
+}

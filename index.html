@@ -10,9 +10,38 @@
     <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700&family=Roboto:wght@400;700&display=swap" rel="stylesheet">
     <link rel="shortcut icon" href="./imgs/Remaster-Logo-Jv-Png.ico" type="image/x-icon">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
-    
+
     <title>Ojaozin.dev</title>
     <link rel="stylesheet" href="style.css">
+    <style>
+        .hidden {
+            display: none;
+        }
+
+        /* Estilo para o botão "Ver Mais" */
+        .ver-mais-container {
+            position: relative;
+            text-align: center;
+            margin-top: 20px;
+            margin-bottom: 20px;
+        }
+
+        .ver-mais-btn {
+            font-size: 18px;
+            font-weight: bold;
+            background-color: #007bff;
+            color: #fff;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            padding: 10px 20px;
+            transition: background-color 0.3s;
+        }
+
+        .ver-mais-btn:hover {
+            background-color: #0056b3;
+        }
+    </style>
 </head>
 
 <body>
@@ -22,8 +51,8 @@
             <h1>Ojaozin.dev</h1>
         </div>
 
-         <!-- Menu hamburguer -->
-         <button id="hamburgerBtn" class="hamburger">
+        <!-- Menu hamburguer -->
+        <button id="hamburgerBtn" class="hamburger">
             <span class="bar"></span>
             <span class="bar"></span>
             <span class="bar"></span>
@@ -65,7 +94,7 @@
             <div class="row">
                 <article class="col-md-4 project-item">
                     <h3>Animação Criativa</h3>
-                    <p>É um carrosel animado desenvolvido em HTML, CSS e JS.</p>
+                    <p>É um carrossel animado desenvolvido em HTML, CSS e JS.</p>
                     <img src="./imgs/thumb.png" alt="Projeto Criativo" class="img-fluid">
                 </article>
                 <article class="col-md-4 project-item">
@@ -84,89 +113,88 @@
                     <img src="./imgs/gerador de senh.jpeg" alt="Gerador de Senhas" class="img-fluid">
                 </article>
                 <article class="col-md-4 project-item">
-                    <h3>Carrosel Animado</h3>
-                    <p>Este projeto é um Carrosel Animado.</p>
-                    <img src="./imgs/carrosel thumb.png" alt="carrosel" class="img-fluid">
+                    <h3>Carrossel Animado</h3>
+                    <p>Este projeto é um Carrossel Animado.</p>
+                    <img src="./imgs/carrosel thumb.png" alt="carrossel" class="img-fluid">
                 </article>
                 <article class="col-md-4 project-item">
                     <h3>Card Animado</h3>
                     <p>Este projeto é um Card Animado.</p>
                     <img src="./imgs/pp.png" alt="card animado" class="img-fluid">
                 </article>
-                <article class="col-md-4 project-item">
-                    <h3>Landing Page </h3>
-                    <p> Landing Page da Fanta Animada.</p>
+                <article class="col-md-4 project-item hidden">
+                    <h3>Landing Page</h3>
+                    <p>Landing Page da Fanta Animada.</p>
                     <img src="./imgs/Landing.png" alt="card animado" class="img-fluid">
                 </article>
-                <article class="col-md-4 project-item">
-                    <h3>Music Player </h3>
-                    <p> Music Player Animado.</p>
+                <article class="col-md-4 project-item hidden">
+                    <h3>Music Player</h3>
+                    <p>Music Player Animado.</p>
                     <img src="./imgs/Music Player.png" alt="card animado" class="img-fluid">
                 </article>
-                <article class="col-md-4 project-item">
-                    <h3>Card Hover Parallax </h3>
+                <article class="col-md-4 project-item hidden">
+                    <h3>Card Hover Parallax</h3>
                     <p>Card Hover Parallax da Nike com Html,css e Js.</p>
                     <img src="./imgs/card parallax.png" alt="card animado" class="img-fluid">
                 </article>
-                <article class="col-md-4 project-item">
-                    <h3>Reformulação  da Nike </h3>
+                <article class="col-md-4 project-item hidden">
+                    <h3>Reformulação  da Nike</h3>
                     <p>Site da nike com Html,Css e Js.</p>
                     <img src="./imgs/nike.png" alt="card animado" class="img-fluid">
                 </article>
-                <article class="col-md-4 project-item">
-                    <h3>Loja Star Wars </h3>
+                <article class="col-md-4 project-item hidden">
+                    <h3>Loja Star Wars</h3>
                     <p>Loja De Venda de Artigos de Star Wars.</p>
                     <img src="./imgs/Star Wars.png" alt="card animado" class="img-fluid">
                 </article>
-                <article class="col-md-4 project-item">
-                    <h3>Sistema Solar </h3>
+                <article class="col-md-4 project-item hidden">
+                    <h3>Sistema Solar</h3>
                     <p>Sistema Solar com Html,Css e Js.</p>
                     <img src="./imgs/sistema solar.png" alt="card animado" class="img-fluid">
                 </article>
-                <article class="col-md-4 project-item">
-                    <h3> Game Ninja </h3>
+                <article class="col-md-4 project-item hidden">
+                    <h3>Game Ninja</h3>
                     <p>Game com Html,Css e Js.</p>
                     <img src="./imgs/ojz game.png" alt="card animado" class="img-fluid">
-                </article>
-                <article class="col-md-4 project-item">
-                    <h3> Game Tênis </h3>
+                </article> <article class="col-md-4 project-item hidden">
+                    <h3>Game Tênis</h3>
                     <p>Game com Html,Css e Js.</p>
                     <img src="./imgs/Game tenis.png" alt="card animado" class="img-fluid">
                 </article>
-                <article class="col-md-4 project-item">
-                    <h3>Relógio Digital </h3>
+                <article class="col-md-4 project-item hidden">
+                    <h3>Piano Simulator</h3>
+                    <p>Simulador com Html,Css e Js.</p>
+                    <img src="./imgs/pianooooooooooo.png" alt="card animado" class="img-fluid">
+                </article>
+                <article class="col-md-4 project-item hidden">
+                    <h3>Relógio Digital</h3>
                     <p>Relógio com Html,Css e Js.</p>
                     <img src="./imgs/COCKL.png" alt="card animado" class="img-fluid">
                 </article>
-                <article class="col-md-4 project-item">
-                    <h3>Piano Simulator </h3>
-                    <p>Simulator com Html,Css e Js.</p>
-                    <img src="./imgs/pianooooooooooo.png" alt="card animado" class="img-fluid">
-                </article>
-                <article class="col-md-4 project-item">
-                    <h3>Game 2048 </h3>
-                    <p>Game 2048 Html,Css e Js.</p>
+                <article class="col-md-4 project-item hidden">
+                    <h3>Game 2048</h3>
+                    <p>Game com Html,Css e Js.</p>
                     <img src="./imgs/2048888.png" alt="card animado" class="img-fluid">
                 </article>
-                <article class="col-md-4 project-item">
-                    <h3>Game Snake </h3>
-                    <p>Game Snake Html,Css e Js.</p>
-                    <img src="./imgs/snake game.png" alt="card animado" class="img-fluid">
-                </article>
-                <article class="col-md-4 project-item">
-                    <h3>3D Hover Flow </h3>
-                    <p> 3d Hover Html,Css e Js.</p>
+                <article class="col-md-4 project-item hidden">
+                    <h3>3d Hover Flow</h3>
+                    <p>3d Hover com Html,Css e Js.</p>
                     <img src="./imgs/3DZIN.png" alt="card animado" class="img-fluid">
                 </article>
+                <article class="col-md-4 project-item hidden">
+                    <h3>Game Snake</h3>
+                    <p>Game com Html,Css e Js.</p>
+                    <img src="./imgs/snake game.png" alt="card animado" class="img-fluid">
+                </article>
 
+            </div>
 
+            <!-- Botão "Ver Mais" -->
+            <div class="ver-mais-container">
+                <button class="ver-mais-btn" onclick="mostrarMais()">Ver Mais</button>
             </div>
         </section>
     </main>
-    
-
-    <!-- Botão para voltar ao topo -->
-    <button id="backToTopBtn" title="Voltar ao topo"><i class="fas fa-arrow-up"></i></button>
 
     <footer class="footer">
         <div class="social-links">
@@ -182,10 +210,8 @@
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.3/dist/umd/popper.min.js"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
-    <script src="script.js"></script>
 
-
-   
+    
 </body>
 
 </html>
