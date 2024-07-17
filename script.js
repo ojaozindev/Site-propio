@@ -58,3 +58,34 @@ function mostrarMais() {
     // Oculta o botão "Ver Mais" após mostrar todos os projetos
     document.querySelector('.ver-mais-container').classList.add('hidden');
 }
+
+
+// Função para criar o cursor personalizado
+function createCustomCursor() {
+    const cursor = document.createElement('div');
+    cursor.classList.add('cursor');
+    document.body.appendChild(cursor);
+
+    // Atualiza a posição do cursor personalizado com base no movimento do mouse
+    document.addEventListener('mousemove', (e) => {
+        const scrollX = window.scrollX || document.documentElement.scrollLeft;
+        const scrollY = window.scrollY || document.documentElement.scrollTop;
+        cursor.style.transform = `translate(${e.clientX + scrollX}px, ${e.clientY + scrollY}px)`;
+    });
+
+    // Mostra e oculta o cursor personalizado conforme necessário
+    document.addEventListener('mouseenter', () => {
+        cursor.style.display = 'block';
+    });
+
+    document.addEventListener('mouseleave', () => {
+        cursor.style.display = 'none';
+    });
+}
+
+// Chama a função para criar o cursor personalizado quando o conteúdo da página é carregado
+document.addEventListener('DOMContentLoaded', createCustomCursor);
+
+
+
+

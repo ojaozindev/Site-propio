@@ -297,6 +297,20 @@ section {
 }
 
 
+/* Estilo do cursor personalizado */
+.cursor {
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    background-color: rgba(0, 51, 102, 0.8); /* Cor do site com transparência */
+    position: absolute;
+    pointer-events: none;
+    z-index: 1000;
+    transition: transform 0.1s ease-out;
+}
+
+
+
 
 /* Estilos responsivos */
 @media (max-width: 1024px) {
