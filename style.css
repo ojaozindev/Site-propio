@@ -18,6 +18,21 @@ body {
 
 
 /* Estilos do cabeçalho */
+
+
+/* Estilo do cursor personalizado */
+.cursor {
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    background-color: rgba(0, 68, 204, 0.7); /* cor com transparência */
+    position: fixed;
+    pointer-events: none; /* garante que o cursor não interfira com outros elementos */
+    z-index: 9999; /* acima de outros elementos */
+    transform: translate(-50%, -50%);
+    display: none; /* inicialmente oculto */
+}
+
 .header {
     display: flex;
     align-items: center;
@@ -296,18 +311,6 @@ section {
     animation: fadeIn 1s ease-in-out;
 }
 
-
-/* Estilo do cursor personalizado */
-.cursor {
-    width: 20px;
-    height: 20px;
-    border-radius: 50%;
-    background-color: rgba(0, 51, 102, 0.8); /* Cor do site com transparência */
-    position: absolute;
-    pointer-events: none;
-    z-index: 1000;
-    transition: transform 0.1s ease-out;
-}
 
 
 

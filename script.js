@@ -66,26 +66,39 @@ function createCustomCursor() {
     cursor.classList.add('cursor');
     document.body.appendChild(cursor);
 
-    // Atualiza a posição do cursor personalizado com base no movimento do mouse
-    document.addEventListener('mousemove', (e) => {
+    // Função para atualizar a posição do cursor personalizado
+    function updateCursorPosition(e) {
+        cursor.style.left = `${e.clientX}px`;
+        cursor.style.top = `${e.clientY}px`;
+    }
+
+    // Evento de movimento do mouse para atualizar a posição do cursor
+    document.addEventListener('mousemove', updateCursorPosition);
+
+    // Evento de rolagem da página para ajustar a posição do cursor
+    window.addEventListener('scroll', () => {
         const scrollX = window.scrollX || document.documentElement.scrollLeft;
         const scrollY = window.scrollY || document.documentElement.scrollTop;
-        cursor.style.transform = `translate(${e.clientX + scrollX}px, ${e.clientY + scrollY}px)`;
+        cursor.style.left = `${e.clientX + scrollX}px`;
+        cursor.style.top = `${e.clientY + scrollY}px`;
     });
 
-    // Mostra e oculta o cursor personalizado conforme necessário
+    // Evento para esconder o cursor personalizado quando o mouse sai da janela
+    document.addEventListener('mouseleave', () => {
+        cursor.style.display = 'none';
+    });
+
+    // Mostra o cursor personalizado quando o mouse entra na janela
     document.addEventListener('mouseenter', () => {
         cursor.style.display = 'block';
     });
 
-    document.addEventListener('mouseleave', () => {
-        cursor.style.display = 'none';
-    });
+    // Oculta o cursor personalizado inicialmente
+    cursor.style.display = 'none';
 }
 
 // Chama a função para criar o cursor personalizado quando o conteúdo da página é carregado
 document.addEventListener('DOMContentLoaded', createCustomCursor);
-
 
 
 
