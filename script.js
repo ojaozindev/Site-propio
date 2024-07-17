@@ -62,6 +62,12 @@ function mostrarMais() {
 
 // Função para criar o cursor personalizado
 function createCustomCursor() {
+    const isMobile = window.innerWidth <= 768; // Defina o limite de largura para dispositivos móveis
+
+    if (isMobile) {
+        return; // Retorna se for um dispositivo móvel
+    }
+
     const cursor = document.createElement('div');
     cursor.classList.add('cursor');
     document.body.appendChild(cursor);
